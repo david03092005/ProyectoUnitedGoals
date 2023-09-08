@@ -1,0 +1,26 @@
+/* .navigator {
+    background-color: #d16868;
+    height: 10px;
+    margin-left: 30px;
+} */
+
+.contenedorNavigator {
+    width: 90%;
+    margin-left: 30px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    margin-right: 100px;
+}
+
+.search {
+    margin-left: 185%;
+}
+
+.linksSelected {
+    background-color: gray;
+
+}

@@ -1,0 +1,11 @@
+.container {
+    border: 1px solid blueviolet;
+    width: 600px;
+    height: 600px;
+    margin: 20px 20px;
+    border-radius: 30px;
+}
+
+.titulo {
+    color: blueviolet;
+}
