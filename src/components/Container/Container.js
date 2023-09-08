@@ -1,4 +1,5 @@
 import styles from "./Container.module.css";
+import { Link } from "react-router-dom";
 
 function Container({name}){
     
@@ -13,20 +14,22 @@ function Container({name}){
     // }
     
     return(
-        <div className = {styles.container}>
-            <h2 className = {styles.titulo}> {name} </h2>
-            {/* {
-                showMessage ?
-                <p>
-                    {message}
-                </p>
-                :
-                null
-            } */}
-            {/* <Link to = '/about'>
-                About
-            </Link> */}
-        </div>
+        <Link to = "/">
+            <div className = {styles.container}>
+                <h2 className = {styles.titulo}> {name} </h2>
+                {/* {
+                    showMessage ?
+                    <p>
+                        {message}
+                    </p>
+                    :
+                    null
+                } */}
+                {/* <Link to = '/about'>
+                    About
+                </Link> */}
+            </div>
+        </Link>
     );
 }
 

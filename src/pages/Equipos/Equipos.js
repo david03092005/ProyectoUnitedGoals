@@ -1,12 +1,12 @@
 import Container from "../../components/Container/Container";
-import styles from './Equipos.module.css'
+import styles from './Equipos.module.css';
 import { useState } from "react";
 
 function Equipos() {
     const [posts] = useState([
     {
         id: 1,
-        name: "Real madrid"
+        name: "Real madrid, el rey de europa"
     }, 
     {
         id: 2,
@@ -20,12 +20,12 @@ function Equipos() {
     return (
         <div className = "Equipos">
             <div className = {styles.Nose}>
-                {posts.map((p, i) => (
-                    <Container
-                        key = {p.id}
-                        name = {p.name}
-                    />
-                ))}
+                    {posts.map((p, i) => (
+                        <Container
+                            key = {p.id}
+                            name = {p.name}
+                        />
+                    ))}
             </div>
         </div>
     );
