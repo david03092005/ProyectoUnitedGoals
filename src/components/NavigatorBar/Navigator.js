@@ -37,16 +37,16 @@ function Navigator(){
     return(
         <div className = {styles.contenedorNavigator}>
             <nav className = {styles.navigator}>
-                <Link to = '/' className = {`${styles.links} ${home === true ? styles.linksSelected : null}`} onClick={onHome}>
+                <Link to = '/' className = {`${styles.links} ${home === true ? styles.square: null}`} onClick={onHome}>
                     Inicio
                 </Link>
-                <Link to = '/Acerca' className = {`${styles.links} ${acerca === true ? styles.linksSelected : null}`} onClick={onAcerca}>
+                <Link to = '/Acerca' className = {`${styles.links} ${acerca === true ? styles.square : null}`} onClick={onAcerca}>
                     Acerca
                 </Link>
-                <Link to = '/equipos' className = {`${styles.links} ${equipos === true ? styles.linksSelected : null}`} onClick={onEquipos}>
+                <Link to = '/equipos' className = {`${styles.links} ${equipos === true ? styles.square : null}`} onClick={onEquipos}>
                     Equipos
                 </Link>
-                <Link to = '/eventos' className = {`${styles.links} ${eventos === true ? styles.linksSelected : null}`} onClick={onEventos}>    
+                <Link to = '/eventos' className = {`${styles.links} ${eventos === true ? styles.square : null}`} onClick={onEventos}>    
                     Eventos
                 </Link>
                 <Link className = {styles.search}>

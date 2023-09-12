@@ -19,6 +19,7 @@ function Equipos() {
 
     return (
         <div className = "Equipos">
+            <h1>Equipos</h1>
             <div className = {styles.Nose}>
                     {posts.map((p, i) => (
                         <Container
