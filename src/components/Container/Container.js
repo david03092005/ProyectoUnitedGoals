@@ -14,7 +14,7 @@ function Container({name}){
     // }
     
     return(
-        <Link to = "/">
+        <Link to = "/Equipo">
             <div className = {styles.container}>
                 <h2 className = {styles.titulo}> {name} </h2>
                 {/* {

@@ -10,6 +10,7 @@ import Home from './pages/Home/Home';
 import Acerca from './pages/Acerca/Acerca';
 import Equipos from './pages/Equipos/Equipos';
 import Eventos from './pages/Eventos/Eventos';
+import Equipo from './pages/Equipo/Equipo';
 
 function App({showModal}) {
   // const [showModal, setShowModal] = useState(true);2
@@ -25,6 +26,7 @@ function App({showModal}) {
           <Route exact path = '/Acerca' element = {<Acerca/>} />
           <Route exact path = '/Equipos' element = {<Equipos/>} />
           <Route exact path = '/Eventos' element = {<Eventos/>} />
+          <Route exact path='/Equipo' element = {<Equipo/>} />
         </Routes>
         {/* {showModal === true && <Modal cerrar={cerrarModal} />} */}
       </div>
