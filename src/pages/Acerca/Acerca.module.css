@@ -1,5 +1,33 @@
 .ContenedorInformacion {
     position: relative;
     left: 268px;
-    padding: 100%;
+    padding: 10px;
+    margin-left: 10px;
+    display: inline-block;
 }
+
+
+.TituloCreador{
+    padding-top: 100px;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 28px;
+}
+
+.parrafo1{
+    float: left;
+    margin-right: 350px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.ImagenCreadorDeporte {
+    float: right;
+    width: 322px;
+    height: 509px;
+    position: absolute;
+    top: 100px;
+    right: 1px;
+}
+
+
