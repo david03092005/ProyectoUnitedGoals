@@ -1,13 +1,22 @@
 import './App.css';
 import {Route, Routes} from 'react-router-dom';
+import { useState } from 'react';
+import { Connect, connect } from 'react-redux';
+
 import Navigator from './components/NavigatorBar/Navigator';
+import Modal from './components/Modal/Modal';
 
 import Home from './pages/Home/Home';
 import Acerca from './pages/Acerca/Acerca';
 import Equipos from './pages/Equipos/Equipos';
 import Eventos from './pages/Eventos/Eventos';
 
-function App() {
+function App({showModal}) {
+  // const [showModal, setShowModal] = useState(true);2
+  const cerrarModal = () => {
+    // setShowModal(false)
+  }
+
     return (
       <div className = "App">
         <Navigator/>
@@ -17,8 +26,15 @@ function App() {
           <Route exact path = '/Equipos' element = {<Equipos/>} />
           <Route exact path = '/Eventos' element = {<Eventos/>} />
         </Routes>
+        {/* {showModal === true && <Modal cerrar={cerrarModal} />} */}
       </div>
     );
 }
 
-export default App;
+const mapStateToProps = (estado) => {
+  return {
+    showModal: estado.ui.showModal
+  }
+}
+
+export default connect(mapStateToProps)(App);

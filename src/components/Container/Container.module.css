@@ -6,7 +6,13 @@
     border-radius: 30px;
 }
 
+
 Link {
     height: 100%;
     width: 100%;
+}
+
+
+.titulo {
+    text-decoration: none;
 }

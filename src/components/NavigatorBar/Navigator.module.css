@@ -8,18 +8,16 @@
 }
 
 .links {
-    margin-right: 100px;
-    width: 100px;
-    height: 60px;
+    padding: 30px 100px 24px 100px;
+    text-decoration: none;
 }
 
 .search {
-    margin-left: 185%;
     width: 100px;
     height: 60px;
+    left: 100%;
 }
 
 .square {
     background-color: gray;
-    padding: 25px 24px;
 }
