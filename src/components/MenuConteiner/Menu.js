@@ -7,7 +7,7 @@ function Menu(props) {
       <ul className = {styles.menuList}>
         {options.map((option, index) => (
           <li key={index}>
-            <a href="#">
+            <a href={option}>
               {option}
             </a>
           </li>
