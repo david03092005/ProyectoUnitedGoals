@@ -1,5 +1,5 @@
 import Menu from "../../components/MenuConteiner/Menu";
-import styles from './Acerca.module.css'
+import styles from './Acerca.module.css';
 
 function Acerca() {
 
