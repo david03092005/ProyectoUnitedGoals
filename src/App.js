@@ -11,6 +11,7 @@ import Acerca from './pages/Acerca/Acerca';
 import Equipos from './pages/Equipos/Equipos';
 import Eventos from './pages/Eventos/Eventos';
 import Equipo from './pages/Equipo/Equipo';
+import Jugador from './pages/Jugador/Jugador';
 
 function App({showModal}) {
   // const [showModal, setShowModal] = useState(true);2
@@ -27,6 +28,7 @@ function App({showModal}) {
           <Route exact path = '/Equipos' element = {<Equipos/>} />
           <Route exact path = '/Eventos' element = {<Eventos/>} />
           <Route exact path='/Equipo' element = {<Equipo/>} />
+          <Route exact path='/Jugador' element = {<Jugador />} />
         </Routes>
         {/* {showModal === true && <Modal cerrar={cerrarModal} />} */}
       </div>

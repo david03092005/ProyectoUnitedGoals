@@ -1,0 +1,21 @@
+.Route{
+    position: relative;
+    top: 75px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.ContenedorVideo{
+    display: inline-block;
+    background-color: #E5E9F2;
+    width: 80vh;
+    height: 50vh;
+}
+
+.ImagenVideo{
+    margin-top: 6%;
+    width: 60vh;
+    height: 80%;
+}

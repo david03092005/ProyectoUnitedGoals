@@ -6,7 +6,7 @@ function Acerca() {
     const menuOptions = ["Creador del juego", "Forma de jugarlo", "Competencias importantes" ];
 
     return (
-        <div>
+        <div className={styles.Route}>
             <Menu options = {menuOptions} />
 
             <div className={styles.ContenedorInformacion}>

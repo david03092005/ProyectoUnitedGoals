@@ -1,0 +1,40 @@
+.Route{
+    position: relative;
+    top: 75px;
+}
+
+.ImagenJugadores{
+    position: relative;
+    width: 100vh;
+    height: 70vh;
+}
+
+.ContenedorInfoEquipo{
+    width: 50vh;
+    position: relative;
+    align-self: center;
+}
+
+.TituloInfoEquipo{
+    font-size: 10px;
+}
+
+.ParrafoInfoEquipo{
+    text-align: left;
+    width: 40vh;
+}
+
+.ImagenJugadoresInfo{
+    position: relative;
+    width: 50vh;
+    height: 40vh;
+    margin: 5%;
+}
+
+.ContenedorMayorInfo{
+    margin: 100px;
+    position: relative;
+    top: 75px;
+    display: flex;
+    justify-content: center;
+}

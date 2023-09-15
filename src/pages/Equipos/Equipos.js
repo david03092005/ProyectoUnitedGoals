@@ -15,10 +15,18 @@ function Equipos() {
     {
         id: 3,
         name: "Arsenal"
+    },
+    {
+        id:4,
+        name: "Liverpool"
+    },
+    {
+        id:5 ,
+        name:"Manchester United"
     }])
 
     return (
-        <div className = "Equipos">
+        <div className = {styles.Route}>
             <h1>Equipos</h1>
             <div className = {styles.ContenedorEquipo}>
                     {posts.map((p, i) => (

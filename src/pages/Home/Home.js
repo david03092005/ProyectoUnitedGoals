@@ -1,5 +1,6 @@
 // import Container from "../../components/Container/Container";
 // import React, {useState} from 'react';
+import styles from './Home.module.css'
 
 function Home() {
     // const [posts] = useState([
@@ -21,7 +22,14 @@ function Home() {
     // }
       
     return (
-        <div></div>
+        <div className={styles.Route}>
+            <h1>
+                UNITED GOALS
+            </h1>
+            <div className={styles.ContenedorVideo}>
+                <img src="default.jpg" className = {styles.ImagenVideo} alt="Imagen del creador"/>
+            </div>
+        </div>
 
         // <div className = "App">
         //     <h1>Hola React</h1>

@@ -16,7 +16,11 @@ function Container({name}){
     return(
         <Link to = "/Equipo">
             <div className = {styles.container}>
+            <img src="default.jpg" className = {styles.ImagenEquipo} alt="Imagen del creador"/>
                 <h2 className = {styles.titulo}> {name} </h2>
+                <p className={styles.ParrafoC}>
+                    lorem, ipsum.
+                </p>
                 {/* {
                     showMessage ?
                     <p>

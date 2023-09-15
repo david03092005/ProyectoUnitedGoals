@@ -1,0 +1,30 @@
+.Route{
+    position: relative;
+    top: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.ContenedorJugador{
+    display: grid;
+    align-content: center;
+    left: 5%;
+    margin: 5%;
+    position: relative;
+    width: 100vh;
+    width: 40%;
+}
+
+.TituloJugador{
+    font-size: 300%;
+}
+
+.ParrafoJugador{
+    text-align: left;
+}
+
+.ImagenJugador{
+    width: 45%;
+    height: 60vh;
+    margin: 5%;
+}

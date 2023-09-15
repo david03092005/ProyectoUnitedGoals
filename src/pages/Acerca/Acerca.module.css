@@ -1,8 +1,14 @@
 .ContenedorInformacion {
     position: relative;
     left: 268px;
-    width: 71%;
-    height: auto;
+    /* top: 75px; */
+    width: 80%;
+    /* height: auto; */
+}
+
+.Route{
+    position: relative;
+    top: 75px;
 }
 
 
