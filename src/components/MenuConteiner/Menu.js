@@ -1,4 +1,5 @@
 import styles from "./Menu.module.css"
+import { Link } from "react-router-dom";
 
 function Menu(props) {
   const { options } = props;
@@ -7,9 +8,11 @@ function Menu(props) {
       <ul className = {styles.menuList}>
         {options.map((option, index) => (
           <li key={index}>
-            <a href={option}>
-              {option}
-            </a>
+            <Link to='/Error404'>
+              <a>
+                {option}
+              </a>
+            </Link>
           </li>
           ))}
       </ul>

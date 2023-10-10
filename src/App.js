@@ -1,10 +1,11 @@
 import './App.css';
 import {Route, Routes} from 'react-router-dom';
-import { useState } from 'react';
-import { Connect, connect } from 'react-redux';
+import { connect } from 'react-redux';
 
 import Navigator from './components/NavigatorBar/Navigator';
 import Modal from './components/Modal/Modal';
+
+// import { setModal } from './store/actions/ui';
 
 import Home from './pages/Home/Home';
 import Acerca from './pages/Acerca/Acerca';
@@ -13,12 +14,15 @@ import Eventos from './pages/Eventos/Eventos';
 import Equipo from './pages/Equipo/Equipo';
 import Jugador from './pages/Jugador/Jugador';
 import Footer from './components/Footer/Footer';
+import Error404 from './pages/Error404/Error404';
+
 
 function App({showModal}) {
   // const [showModal, setShowModal] = useState(true);2
-  const cerrarModal = () => {
-    // setShowModal(false)
-  }
+  // const cerrarModal = () => {
+  //   setModal(!showModal)
+  //   setShowModal(false)
+  // }
 
     return (
       <div className = "App">
@@ -28,11 +32,12 @@ function App({showModal}) {
           <Route exact path = '/Acerca' element = {<Acerca/>} />
           <Route exact path = '/Equipos' element = {<Equipos/>} />
           <Route exact path = '/Eventos' element = {<Eventos/>} />
-          <Route exact path='/Equipo' element = {<Equipo/>} />
-          <Route exact path='/Jugador' element = {<Jugador />} />
+          <Route exact path = '/Equipo' element = {<Equipo/>} />
+          <Route exact path = '/Jugador' element = {<Jugador />} />
+          <Route exact path = '*' element = {<Error404/>} />
         </Routes>
         <Footer/>
-        {/* {showModal === true && <Modal cerrar={cerrarModal} />} */}
+        {showModal === true && <Modal />}
       </div>
     );
 }

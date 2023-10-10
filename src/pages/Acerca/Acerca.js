@@ -35,13 +35,14 @@ function Acerca() {
             <div className={styles.ContenedorInformacion}>
                 <h2 className={styles.TituloCreador}>Competencias importantes</h2>
                 
-                    <p className={styles.parrafo1}>
+                    {/* <p className={styles.parrafo1}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Nulla vestibulum mauris ut diam vulputate, nec scelerisque magna maximus. 
                         Suspendisse sit amet ex vestibulum, semper nunc quis, consequat arcu. 
                         Pellentesque feugiat molestie enim a aliquam.
-                    </p>
+                    </p> */}
                     <img src="creadorDeporte.jpeg" className = {styles.ImagenCreadorDeporte} alt="Imagen del creador" />
+                    <img src="default.jpg" className = {styles.ImagenCreadorDeporte} alt="Imagen del creador" />
                     
                
             </div>

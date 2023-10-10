@@ -1,10 +1,12 @@
 import styles from './Modal.module.css'
+import { connect } from 'react-redux';
+import { setModal } from '../../store/actions/ui';
 
-function Modal({cerrar}){
+function Modal({setModal}){
     return(
         <div className={styles.contenedorModal}>
             <div className={styles.VentanaModal}>
-                <button onClick={() => { cerrar(); }}>
+                <button onClick={() => {setModal(false)}}>
                     X
                 </button>
             </div>
@@ -12,4 +14,8 @@ function Modal({cerrar}){
     )
 }
 
-export default Modal;
+const mapActionsToProps = {
+    setModal
+}
+
+export default connect(null, mapActionsToProps)(Modal);
