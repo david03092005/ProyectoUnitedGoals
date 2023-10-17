@@ -8,6 +8,21 @@
     border-radius: 30px;
 }
 
+.ImagenEquipo:hover {
+    animation: anim 2s ease;
+}
+
+@keyframes anim {
+    50% {
+        border-radius: 50%;
+        width: 70%;
+    }
+    100% {
+        border-radius: 0;
+        width: 70%;
+    }
+}
+
 .ImagenEquipo{
     border-radius: 100%;
     width: 50%;

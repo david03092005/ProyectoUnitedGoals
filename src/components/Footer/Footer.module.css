@@ -1,18 +1,30 @@
 .ContenedorFooter{
     position: relative;
-    /* top: 100px; */
     background-color: gray;
-    padding: 10px;
-    bottom: -200px;
+    bottom: -213px;
 }
 
 .Footer{
-    /* display: flex; */
     position: relative;
-    width: 100%;
+    display: inline-block;
+    width: 20%; 
+    left: -150px;
 }
 
 h6{
     text-align: left;
     padding: 0px 50px;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+}
+
+.LogoFooter{
+    width: 200px;
+    height: 50px;
+    left: -200px;
+    top: -100px;
+    position:relative;
 }

@@ -3,9 +3,7 @@ import {Route, Routes} from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import Navigator from './components/NavigatorBar/Navigator';
-import Modal from './components/Modal/Modal';
-
-// import { setModal } from './store/actions/ui';
+// import Modal from './components/Modal/Modal';
 
 import Home from './pages/Home/Home';
 import Acerca from './pages/Acerca/Acerca';
@@ -17,13 +15,7 @@ import Footer from './components/Footer/Footer';
 import Error404 from './pages/Error404/Error404';
 
 
-function App({showModal}) {
-  // const [showModal, setShowModal] = useState(true);2
-  // const cerrarModal = () => {
-  //   setModal(!showModal)
-  //   setShowModal(false)
-  // }
-
+function App() {
     return (
       <div className = "App">
         <Navigator/>
@@ -37,15 +29,15 @@ function App({showModal}) {
           <Route exact path = '*' element = {<Error404/>} />
         </Routes>
         <Footer/>
-        {showModal === true && <Modal />}
+        {/* {showModal === true && <Modal />} */}
       </div>
     );
 }
 
 const mapStateToProps = (estado) => {
   return {
-    showModal: estado.ui.showModal
+    // showModal: estado.ui.showModal
   }
 }
 
-export default connect(mapStateToProps)(App);
+export default connect()(App);

@@ -1,52 +1,31 @@
 import {Link} from 'react-router-dom';
 import styles from "./Navigator.module.css";
-import { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { inicioCambiar, acercaCambiar, equiposCambiar, eventosCambiar } from '../../store/navigatorBarSlice';
 
 function Navigator(){
-    const [ home, setHome ] = useState(true)
-    const [ acerca, setAcerca ] = useState(false)
-    const [ equipos, setEquipos ] = useState(false)
-    const [ eventos, setEventos ] = useState(false)
-
-    const onHome = () => {
-        setHome(true);
-        setAcerca(false);
-        setEquipos(false);
-        setEventos(false);
-    }
-    const onAcerca = () => {
-        console.log('cualquier')
-        setHome(false);
-        setAcerca(true);
-        setEquipos(false);
-        setEventos(false);
-    }
-    const onEquipos = () => {
-        setHome(false);
-        setAcerca(false);
-        setEquipos(true);
-        setEventos(false);
-    }
-    const onEventos = () => {
-        setHome(false);
-        setAcerca(false);
-        setEquipos(false);
-        setEventos(true);
-    }
+    const { inicio } = useSelector((estado) => estado.navigatorBar);
+    const { acerca } = useSelector((estado) => estado.navigatorBar);
+    const { equipos } = useSelector((estado) => estado.navigatorBar);
+    const { eventos } = useSelector((estado) => estado.navigatorBar);
+    const dispatch = useDispatch();
 
     return(
         <div className = {styles.contenedorNavigator}>
             <nav className = {styles.navigator}>
-                <Link to = '/' className = {`${styles.links} ${home === true ? styles.square: null}`} onClick={onHome}>
+                <Link to = '/' className = {styles.contenedorLogo} onClick={() => dispatch(inicioCambiar())}>
+                    <img src="default.jpg" className = {styles.Logo} alt="LogoPag"/>
+                </Link>
+                <Link to = '/' className = {`${styles.links} ${inicio === true ? styles.square: null}`} onClick={() => dispatch(inicioCambiar())}>
                     Inicio
                 </Link>
-                <Link to = '/Acerca' className = {`${styles.links} ${acerca === true ? styles.square : null}`} onClick={onAcerca}>
+                <Link to = '/Acerca' className = {`${styles.links} ${acerca === true ? styles.square : null}`} onClick={() => dispatch(acercaCambiar())}>
                     Acerca
                 </Link>
-                <Link to = '/equipos' className = {`${styles.links} ${equipos === true ? styles.square : null}`} onClick={onEquipos}>
+                <Link to = '/equipos' className = {`${styles.links} ${equipos === true ? styles.square : null}`} onClick={() => dispatch(equiposCambiar())}>
                     Equipos
                 </Link>
-                <Link to = '/eventos' className = {`${styles.links} ${eventos === true ? styles.square : null}`} onClick={onEventos}>    
+                <Link to = '/eventos' className = {`${styles.links} ${eventos === true ? styles.square : null}`} onClick={() => dispatch(eventosCambiar())}>    
                     Eventos
                 </Link>
                 <Link className = {styles.search}>
