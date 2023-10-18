@@ -12,6 +12,8 @@
 
 .ImagenEquipo:hover {
     animation: anim 2s ease;
+    border-radius: 0;
+    width: 70%;
 }
 
 @keyframes anim {
