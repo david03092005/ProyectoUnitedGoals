@@ -17,13 +17,13 @@
     background-color: white;
 }
 
-.search {
+/* .search {
     position: relative;
     padding: 30px 0px 24px 100px;
     text-decoration: none;
     left: 63%;
     background-color: white;
-}
+} */
 
 .square {
     color: white;
@@ -31,7 +31,7 @@
 }
 
 .Logo{
-    width: 100px;
+    width: 47px;
     height: 28px;
 }
 

@@ -1,8 +1,11 @@
 import styles from "./Container.module.css";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
-function Container({name}){
-    
+import { cargarEquipos } from "../../store/equiposInfoSlice";
+
+function Container({equipo}){
+    const dispatch = useDispatch();
     // const [showMessage, setShowMessage] = useState(true)
     // const [message, setMessage] = useState(`Bienvenido ${name}`)
     // const onButtonClick = () => {
@@ -14,10 +17,10 @@ function Container({name}){
     // }
     
     return(
-        <Link to = "/Equipo">
+        <Link to = "/Equipo" onClick={() => (dispatch(cargarEquipos(equipo)))}>
             <div className = {styles.container}>
             <img src="default.jpg" className = {styles.ImagenEquipo} alt="Imagen del creador"/>
-                <h2 className = {styles.titulo}> {name} </h2>
+                <h2 className = {styles.titulo}> {equipo.name} </h2>
                 <p className={styles.ParrafoC}>
                     lorem, ipsum.
                 </p>
