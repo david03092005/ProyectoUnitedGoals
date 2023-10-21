@@ -26,14 +26,14 @@ function Home() {
             <h1 className={styles.titulo}>
                 UNITED GOALS
             </h1>
-            <><ImgParallaxHome></ImgParallaxHome>
+            <ImgParallaxHome></ImgParallaxHome>
             <div className={styles.linea}> </div>
             <div className={styles.Route}>
                 <h1 className={styles.subtitulo}>
                     Lo ultimo
                 </h1>
                 <img src="default.jpg" className={styles.ImagenVideo} alt="Imagen del creador" />
-            </div></>
+            </div>
             <div className={styles.linea1}> </div>
             <div className={styles.contenedorFrase}>
                 <img src="homeImg2.jpg" className={styles.ImagenVideo1} alt="Imagen estadio"/>

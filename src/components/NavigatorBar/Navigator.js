@@ -13,6 +13,7 @@ function Navigator(){
     return(
         <div className = {styles.contenedorNavigator}>
             <nav>
+                
                 <Link to = '/' className = {styles.contenedorLogo} onClick={() => dispatch(inicioCambiar())}>
                     <img src="LogoPagInver.png" className = {styles.Logo} alt="LogoPag"/>
                 </Link>

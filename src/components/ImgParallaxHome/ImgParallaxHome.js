@@ -11,7 +11,7 @@ function ImgParallaxHome() {
   // Creamos un valor de y que varía entre -50 y 50 según el scrollYProgress
   const y = useTransform(scrollYProgress, [0, 1], [-100, 60]);
   // Creamos un valor de scale que varía entre 1.2 y 1 según el scrollYProgress
-  const scale = useTransform(scrollYProgress, [0, 1], [1.2, 1]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1.8, 1]);
 
 
   return (

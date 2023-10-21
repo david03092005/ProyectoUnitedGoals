@@ -34,10 +34,4 @@ function App() {
     );
 }
 
-const mapStateToProps = (estado) => {
-  return {
-    // showModal: estado.ui.showModal
-  }
-}
-
 export default connect()(App);

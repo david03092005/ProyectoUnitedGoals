@@ -3,24 +3,23 @@
   }
 
 .linea{
-    background-color:#bb7d69;
+    background-color:#a84428;
     position: relative;
     margin-top: 3.5%;
-    width: 1348px;
+    width: 100%;
     height: 50px;
 }
 
 .linea1{
     background-color:#33a4cb;
     position: relative;
-    width: 1348px;
+    width: 100%;
     height: 50px;
 }
 
 .Route{
     position: relative;
-    margin-top: 1%;
-    width: 1348px;
+    width: 100%;
     height: 800px;
     background-color:#e0e0e1;
 }
@@ -32,7 +31,10 @@
 }
 
 .frase{
-    font-size: 26px;
+    position: absolute;
+    top: 2600px;
+    left: 800px;
+    font-size: 30px;
 }
 
 
@@ -50,13 +52,15 @@
     height: 5px;
     float: left;
 }
+
 .ImagenVideo1{
     margin-top: 1%;
-    width: 1348px;
-    height: 600px;
+    width: 100%;
+    height: 800px;
 }
 
 .contenedorFrase{
     display: inline-block;
+    width: 100%;
 }
 
