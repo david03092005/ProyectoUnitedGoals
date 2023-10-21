@@ -10,7 +10,7 @@ function Footer() {
     return(
         <div className={styles.ContenedorFooter}>
             <Link to = '/' onClick={() => dispatch(inicioCambiar())}>
-                <img src="default.jpg" className = {styles.LogoFooter} alt="LogoFooter"/>
+                <img src="LogoPagInver.png" className = {styles.LogoFooter} alt="LogoFooter"/>
             </Link>
             <footer className={styles.Footer}>
             <Link to = '/'  className={styles.links} onClick={() => dispatch(inicioCambiar())}>

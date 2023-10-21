@@ -1,20 +1,18 @@
 .contenedorNavigator {
     position: fixed;
     z-index: 1;
-    margin-left: 30px;
     width: 100%;
-    height: 70px;
+    height: 60px;
     top: 0;
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #0d1214;
 }
 
 .links {
-    color: black;
-    padding: 30px 100px 19px 100px;
+    color: rgb(255, 255, 255);
+    padding: 58px 75px 3px 75px;
     text-decoration: none;
-    background-color: white;
 }
 
 /* .search {
@@ -26,15 +24,18 @@
 } */
 
 .square {
-    color: white;
-    background-color: gray;
+    color: #0d1214;
+    padding: 58px 75px 3px 75px;
+    background-color: #e0e0e1;
 }
 
 .Logo{
-    width: 47px;
-    height: 28px;
+    
+    width: 20px;
+    height: 50px;
 }
 
 .contenedorLogo{
-    padding: 30px 50px 24px 75px;
+    
+    padding: 1px 75px 1px 75px;
 }

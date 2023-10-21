@@ -12,9 +12,9 @@ function Navigator(){
 
     return(
         <div className = {styles.contenedorNavigator}>
-            <nav className = {styles.navigator}>
+            <nav>
                 <Link to = '/' className = {styles.contenedorLogo} onClick={() => dispatch(inicioCambiar())}>
-                    <img src="LogoPag.png" className = {styles.Logo} alt="LogoPag"/>
+                    <img src="LogoPagInver.png" className = {styles.Logo} alt="LogoPag"/>
                 </Link>
                 <Link to = '/' className = {`${styles.links} ${inicio === true ? styles.square: null}`} onClick={() => dispatch(inicioCambiar())}>
                     Inicio
