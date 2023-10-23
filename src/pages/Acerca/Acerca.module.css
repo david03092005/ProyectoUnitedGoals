@@ -1,8 +1,31 @@
-.ContenedorInformacion {
+.ContenedorInformacion0 {
+    background-color: #e0e0e1;
     position: relative;
     left: 268px;
     /* top: 75px; */
-    width: 80%;
+    width: 100%;
+    display: flex;
+    /* height: auto; */
+}
+.Contenedor {
+    display: block;
+}
+
+.ContenedorInformacion {
+    background-color: #e0e0e1;
+    position: relative;
+    left: 268px;
+    /* top: 75px; */
+    width: 100%;
+    /* height: auto; */
+}
+
+.ContenedorInformacion1 {
+    background-color:#a84428;
+    position: relative;
+    left: 268px;
+    /* top: 75px; */
+    width: 100%;
     /* height: auto; */
 }
 
@@ -17,16 +40,30 @@
     color: #bb7d69;
     padding-top: 100px;
     margin-left: 20%;
-    text-align: left;
     font-size: 28px;
 }
 
+.parrafo11{
+    text-align: left;
+    margin-left: 50%;
+    margin-top: 8%;
+    width: 20%;
+}
+
+.Titulo2{
+    color: #e0e0e1;
+    padding-top: 100px;
+    margin-left: 20%;
+    text-align: left;
+    font-size: 28px;
+}
 .parrafo1{
     text-align: left;
     margin-left: 20%;
     width: 20%;
     float: left;
 }
+
 
 .ImagenCreadorDeporte {
     /* float: right; */

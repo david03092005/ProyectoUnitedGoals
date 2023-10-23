@@ -21,19 +21,23 @@ function Acerca() {
     return (
         <div className={styles.Route}>
             <Menu options = {menuOptions} />
-
-            <div className={styles.ContenedorInformacion} id="1">
-                <h2 className={styles.TituloCreador}>Creador Del deporte</h2>
-                    <p className={styles.parrafo1}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Nulla vestibulum mauris ut diam vulputate, nec scelerisque magna maximus. 
-                        Suspendisse sit amet ex vestibulum, semper nunc quis, consequat arcu. 
-                        Pellentesque feugiat molestie enim a aliquam.
-                    </p>
-                    <img src="creadorDeporte.jpeg" className = {styles.ImagenCreadorDeporte} alt="Imagen del creador" />
+            <div className={styles.Contenedor}>
+                <div className={styles.ContenedorInformacion0} id="1">
+                    <div className={styles.Contenedor}>
+                        <h2 className={styles.TituloCreador}>Creador Del deporte</h2>
+                        <p className={styles.parrafo11}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nulla vestibulum mauris ut diam vulputate, nec scelerisque magna maximus. 
+                            Suspendisse sit amet ex vestibulum, semper nunc quis, consequat arcu. 
+                            Pellentesque feugiat molestie enim a aliquam.
+                        </p>
+                        </div>
+                        <img src="creadorDeporte.jpeg" className = {styles.ImagenCreadorDeporte} alt="Imagen del creador" />
+                </div>
             </div>
-            <div className={styles.ContenedorInformacion} id="2">
-                <h2 className={styles.TituloCreador}>Forma de jugarlo</h2>
+
+            <div className={styles.ContenedorInformacion1} id="2">
+                <h2 className={styles.Titulo2}>Forma de jugarlo</h2>
                 
                     <p className={styles.parrafo1}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 

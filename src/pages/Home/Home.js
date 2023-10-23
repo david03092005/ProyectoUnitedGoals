@@ -38,7 +38,9 @@ function Home() {
             <div className={styles.contenedorFrase}>
                 <img src="homeImg2.jpg" className={styles.ImagenVideo1} alt="Imagen estadio"/>
                 <p className={styles.frase}>
-                    El voleibol es más que un deporte, es una pasión que te llevará a nuevas alturas. 
+                El fútbol no es solo un deporte, es un sentimiento que late en el corazón de quienes
+                <br/>
+                creen en la magia de un balón y en la fortaleza de los sueños compartidos en un equipo. 
                 </p> 
             </div>
         </div>
