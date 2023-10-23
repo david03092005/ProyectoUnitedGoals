@@ -21,47 +21,35 @@ function Acerca() {
     return (
         <div className={styles.Route}>
             <Menu options = {menuOptions} />
-            <div className={styles.Contenedor}>
-                <div className={styles.ContenedorInformacion0} id="1">
-                    <div className={styles.Contenedor}>
-                        <h2 className={styles.TituloCreador}>Creador Del deporte</h2>
-                        <p className={styles.parrafo11}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Nulla vestibulum mauris ut diam vulputate, nec scelerisque magna maximus. 
-                            Suspendisse sit amet ex vestibulum, semper nunc quis, consequat arcu. 
-                            Pellentesque feugiat molestie enim a aliquam.
-                        </p>
-                        </div>
-                        <img src="creadorDeporte.jpeg" className = {styles.ImagenCreadorDeporte} alt="Imagen del creador" />
+            <div className={styles.ContenedorInformacion0} id="1">
+                <div className={styles.Contenedor}>
+                    <h2 className={styles.TituloCreador}>Creador Del deporte</h2>
+                    <p className={styles.parrafo11}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nulla vestibulum mauris ut diam vulputate, nec scelerisque magna maximus. 
+                        Suspendisse sit amet ex vestibulum, semper nunc quis, consequat arcu. 
+                        Pellentesque feugiat molestie enim a aliquam.
+                    </p>
                 </div>
+                    <img src="creadorDeporte.jpeg" className = {styles.ImagenCreadorDeporte} alt="Imagen del creador" />
             </div>
 
             <div className={styles.ContenedorInformacion1} id="2">
-                <h2 className={styles.Titulo2}>Forma de jugarlo</h2>
-                
+                <div className={styles.Contenedor}>
+                    <h2 className={styles.Titulo2}>Forma de jugarlo</h2>
                     <p className={styles.parrafo1}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Nulla vestibulum mauris ut diam vulputate, nec scelerisque magna maximus. 
                         Suspendisse sit amet ex vestibulum, semper nunc quis, consequat arcu. 
                         Pellentesque feugiat molestie enim a aliquam.
                     </p>
-                    <img src="creadorDeporte.jpeg" className = {styles.ImagenCreadorDeporte} alt="Imagen del creador" />
-                    
-               
+                </div>
+                <img src="creadorDeporte.jpeg" className = {styles.ImagenCreadorDeporte} alt="Imagen del creador" /> 
             </div>
-            <div className={styles.ContenedorInformacion} id="3">
-                <h2 className={styles.TituloCreador}>Competencias importantes</h2>
-                
-                    {/* <p className={styles.parrafo1}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Nulla vestibulum mauris ut diam vulputate, nec scelerisque magna maximus. 
-                        Suspendisse sit amet ex vestibulum, semper nunc quis, consequat arcu. 
-                        Pellentesque feugiat molestie enim a aliquam.
-                    </p> */}
-                    <img src="creadorDeporte.jpeg" className = {styles.ImagenCreadorDeporte} alt="Imagen del creador" />
-                    <img src="default.jpg" className = {styles.ImagenCreadorDeporte} alt="Imagen del creador" />
-                    
-               
+            <div className={styles.ContenedorInformacion2} id="3">
+                <h2 className={styles.TituloCompetencias}>Competencias importantes</h2>
+                <img src="creadorDeporte.jpeg" className = {styles.ImagenCompetencias} alt="Imagen del creador" />
+                <img src="default.jpg" className = {styles.ImagenCompetencias} alt="Imagen del creador" />
             </div>
         </div>
     );

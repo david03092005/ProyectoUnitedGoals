@@ -1,78 +1,64 @@
 .ContenedorInformacion0 {
     background-color: #e0e0e1;
-    position: relative;
-    left: 268px;
-    /* top: 75px; */
-    width: 100%;
     display: flex;
-    /* height: auto; */
-}
-.Contenedor {
-    display: block;
 }
 
-.ContenedorInformacion {
+.ContenedorInformacion2 {
     background-color: #e0e0e1;
-    position: relative;
-    left: 268px;
-    /* top: 75px; */
-    width: 100%;
-    /* height: auto; */
+    display: flex;
 }
 
 .ContenedorInformacion1 {
     background-color:#a84428;
-    position: relative;
-    left: 268px;
-    /* top: 75px; */
-    width: 100%;
-    /* height: auto; */
+    display: flex;
 }
 
 .Route{
     position: relative;
-    top: 75px;
-    margin-bottom: 100px;
+    top: 60px;
+    margin-bottom: 60px;
 }
-
 
 .TituloCreador{
     color: #bb7d69;
     padding-top: 100px;
-    margin-left: 20%;
     font-size: 28px;
 }
 
 .parrafo11{
     text-align: left;
-    margin-left: 50%;
-    margin-top: 8%;
-    width: 20%;
+    margin-left: 35%;
+    margin-top: 4%;
+    width: 30%;
 }
 
 .Titulo2{
     color: #e0e0e1;
     padding-top: 100px;
-    margin-left: 20%;
-    text-align: left;
     font-size: 28px;
 }
+
 .parrafo1{
     text-align: left;
-    margin-left: 20%;
-    width: 20%;
-    float: left;
+    margin-left: 35%;
+    width: 30%;
 }
 
-
-.ImagenCreadorDeporte {
-    /* float: right; */
+.ImagenCompetencias {
     width: 322px;
     height: 450px;
-    margin: 30px;
-    /* position: relative; */
-    /* top: 100px; */
-    /* right: 500px; */
+    margin: 30px 50px;
 }
 
+.ImagenCreadorDeporte {
+    width: 322px;
+    height: 450px;
+    margin: 30px 00px;
+    position: relative;
+    right: 20%;
+}
 
+.TituloCompetencias {
+    color: #bb7d69;
+    margin-left: 500px;
+}
