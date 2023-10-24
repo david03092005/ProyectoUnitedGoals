@@ -29,13 +29,6 @@ function Footer() {
                 <h6>Redes sociales</h6>
             </Link>
             </footer>
-            <footer className={styles.Footer}>
-                <h6>Inicio</h6>
-                <h6>Acerca</h6>
-                <h6>Equipos</h6>
-                <h6>Eventos</h6>
-                <h6>Redes sociales</h6>
-            </footer>
         </div>
     );
 }

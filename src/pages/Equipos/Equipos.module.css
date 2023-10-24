@@ -4,7 +4,8 @@
 }
 
 .Route{
-    margin-bottom: 200px;
+    background-color: #e0e0e1;
+    padding-bottom: 200px;
     position: relative;
-    top: 90px;
+    top: 60px;
 }
