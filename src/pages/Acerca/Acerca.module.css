@@ -6,10 +6,11 @@
 .ContenedorInformacion2 {
     background-color: #e0e0e1;
     display: flex;
+    align-items: center;
 }
 
 .ContenedorInformacion1 {
-    background-color:#a84428;
+    background-color: #cd443c;
     display: flex;
 }
 
@@ -34,7 +35,7 @@
 
 .Titulo2{
     color: #e0e0e1;
-    padding-top: 100px;
+    padding-top: 20px;
     font-size: 28px;
 }
 
@@ -45,11 +46,17 @@
 }
 
 .ImagenCompetencias {
-    width: 322px;
+    width: 624px;
     height: 450px;
     margin: 30px 50px;
+    margin-left: 24%;
 }
-
+.ImagenCompetencias1 {
+    width: 664px;
+    height: 450px;
+    margin: 30px 50px;
+    margin-left: 5%;
+}
 .ImagenCreadorDeporte {
     width: 322px;
     height: 450px;
@@ -57,8 +64,15 @@
     position: relative;
     right: 20%;
 }
+.balon {
+    width: 322px;
+    height: 200px;
+    margin: 30px 00px;
+    position: relative;
+    right: 20%;
+}
 
 .TituloCompetencias {
     color: #bb7d69;
-    margin-left: 500px;
+    margin-left: 17%;
 }

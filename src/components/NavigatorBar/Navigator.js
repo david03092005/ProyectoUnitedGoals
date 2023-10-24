@@ -11,8 +11,8 @@ function Navigator(){
     const dispatch = useDispatch();
 
     return(
-        <div className = {styles.contenedorNavigator}>
-            <nav>
+        <div>
+            <nav className = {styles.contenedorNavigator}>
                 
                 <Link to = '/' className = {styles.contenedorLogo} onClick={() => dispatch(inicioCambiar())}>
                     <img src="LogoPagInver.png" className = {styles.Logo} alt="LogoPag"/>

@@ -44,12 +44,14 @@ function Acerca() {
                         Pellentesque feugiat molestie enim a aliquam.
                     </p>
                 </div>
-                <img src="creadorDeporte.jpeg" className = {styles.ImagenCreadorDeporte} alt="Imagen del creador" /> 
+                <img src="balon.png" className = {styles.balon} alt="Imagen del creador" /> 
             </div>
-            <div className={styles.ContenedorInformacion2} id="3">
+            <div> 
                 <h2 className={styles.TituloCompetencias}>Competencias importantes</h2>
-                <img src="creadorDeporte.jpeg" className = {styles.ImagenCompetencias} alt="Imagen del creador" />
-                <img src="default.jpg" className = {styles.ImagenCompetencias} alt="Imagen del creador" />
+                <div className={styles.ContenedorInformacion2} id="3">
+                    <img src="mundial.jpg" className = {styles.ImagenCompetencias} alt="Imagen del creador" />
+                    <img src="La.jpeg" className = {styles.ImagenCompetencias1} alt="Imagen del creador" />
+                </div>
             </div>
         </div>
     );
