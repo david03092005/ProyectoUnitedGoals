@@ -32,7 +32,9 @@ function Home() {
                 <h1 className={styles.subtitulo}>
                     Lo ultimo
                 </h1>
-                <img src="default.jpg" className={styles.ImagenVideo} alt="Imagen del creador" />
+                <video width="1000" height="700" controls>
+                    <source src="./videos/MejoresMomentos.mp4" type="video/mp4"/>
+                </video>
             </div>
             <div className={styles.linea1}> </div>
             <div className={styles.contenedorFrase}>

@@ -21,7 +21,7 @@ function Equipos() {
             img: 'imagenes/BayernMunichPrincipal.jpg',
             escudo: 'EscudoBayern.png',
             imgRepresentativa: 'imagenes/RealMadridRaul.jpg',
-            eslogan: '¡Hala madrid! y nada mas.',
+            eslogan: 'Bayern múnich',
         },
         {
             id: 3,
@@ -30,7 +30,7 @@ function Equipos() {
             img: 'imagenes/ArsenalPrincipal.jpg',
             escudo: 'EscudoArsenal.png',
             imgRepresentativa: 'imagenes/RealMadridRaul.jpg',
-            eslogan: '¡Hala madrid! y nada mas.',
+            eslogan: 'Arsenal',
         },
         {
             id:4,
@@ -39,7 +39,7 @@ function Equipos() {
             img: 'imagenes/LiverpoolPrincipal.jpg',
             escudo: 'EscudoLiverpool.png',
             imgRepresentativa: 'imagenes/RealMadridRaul.jpg',
-            eslogan: '¡Hala madrid! y nada mas.',
+            eslogan: 'Liverpool',
         },
         {
             id:5 ,
@@ -48,7 +48,7 @@ function Equipos() {
             img: 'imagenes/ManchesterUnitedPrincipal.jpg',
             escudo: 'EscudoManchester.png',
             imgRepresentativa: 'imagenes/RealMadridRaul.jpg',
-            eslogan: '¡Hala madrid! y nada mas.',
+            eslogan: 'Manchester United',
         }
     ])
 

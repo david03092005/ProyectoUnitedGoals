@@ -11,17 +11,18 @@
 }
 
 .ImagenEquipo:hover {
-    animation: anim 2s ease;
+    animation: anim 5s ease;
 }
 
 @keyframes anim {
-    50% {
-        border-radius: 50%;
+    10%{
         width: 70%;
+        height: 50%;
     }
+
     100% {
-        border-radius: 0;
-        width: 70%;
+        width: 60%;
+        height: 40%;
     }
 }
 
@@ -29,6 +30,7 @@
     width: 60%;
     height: 40%;
     margin-top: 30px;
+    object-fit: contain;
 }
 
 .titulo {

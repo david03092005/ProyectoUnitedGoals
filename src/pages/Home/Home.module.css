@@ -32,9 +32,9 @@
 
 .frase{
     position: absolute;
-    top: 2600px;
+    top: 2500px;
     left: 800px;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 
@@ -42,15 +42,15 @@
     margin-top: 5%;
     margin-left: 5%;
     float: left;
-    font-size: 40px;
+    font-size: 50px;
     color: #0d1214;
 }
 
-.ImagenVideo{
+.Video{
     margin-top: 2%;
-    width: 5px;
-    height: 5px;
-    float: left;
+    width: 500px;
+    height: 500px;
+    /* float: left; */
 }
 
 .ImagenVideo1{
