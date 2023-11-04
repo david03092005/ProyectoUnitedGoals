@@ -5,6 +5,7 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth"
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
+  databaseURL: "https://united-goals-default-rtdb.firebaseio.com/",
   apiKey: "AIzaSyDFB_3pj24xz2Tyx5bG-R2SJaM2WOfefZc",
   authDomain: "united-goals.firebaseapp.com",
   projectId: "united-goals",

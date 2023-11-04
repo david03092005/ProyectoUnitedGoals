@@ -4,21 +4,23 @@ export const modalSlice = createSlice({
     name: "estadoModal",
     initialState: {
         estadoModalI: false,
-        estadoModalR: false
+        estadoModalR: false,
+        estadoModalN: false
     },
     reducers: {
         cambiarModalI: (estado) => {
-            // estado.estadoModalR = estado.estadoModalR;
             estado.estadoModalI = !(estado.estadoModalI);
         },
         cambiarModalR: (estado) => {
             estado.estadoModalR = !(estado.estadoModalR);
-            // estado.estadoModalI = estado.estadoModalI;
+        },
+        cambiarModalN: (estado) => {
+            estado.estadoModalN = !(estado.estadoModalN);
         }
     }
 })
 
 
-export const { cambiarModalI, cambiarModalR } = modalSlice.actions;
+export const { cambiarModalI, cambiarModalR, cambiarModalN } = modalSlice.actions;
 
 export default modalSlice.reducer;

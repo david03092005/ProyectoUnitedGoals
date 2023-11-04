@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux/es/hooks/useSelector';
 import Navigator from './components/NavigatorBar/Navigator';
 import Modal from './components/Modal/Modal';
 import ModalReg from './components/ModalReg/ModalReg'
+import NuevoEquipo from './components/NuevoEquipo/NuevoEquipo';
 
 import Home from './pages/Home/Home';
 import Acerca from './pages/Acerca/Acerca';
@@ -20,6 +21,7 @@ import Error404 from './pages/Error404/Error404';
 function App() {
   const { estadoModalI } = useSelector((estado) => estado.verModal);
   const { estadoModalR } = useSelector((estado) => estado.verModal);
+  const { estadoModalN } = useSelector((estado) => estado.verModal);
 
     return (
       <div className = "App">
@@ -36,6 +38,7 @@ function App() {
         <Footer/>
         {estadoModalI ? <Modal/> : null}
         {estadoModalR ? <ModalReg/> : null}
+        {estadoModalN ? <NuevoEquipo/> : null}
       </div>
     );
 }

@@ -9,3 +9,14 @@
     position: relative;
     top: 60px;
 }
+
+#botonIngresar{
+    position: relative;
+    color: white;
+    background-color: #0d1214;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 150px;
+    cursor: pointer;
+}

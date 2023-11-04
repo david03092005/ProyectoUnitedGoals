@@ -4,8 +4,6 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    top: 0px;
-    left: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +11,7 @@
 
 .VentanaModal {
     background-color: white;
-    height: 450px;
+    height: 700px;
     width: 600px;
 }
 
@@ -29,9 +27,17 @@
 .entradas{
     width: 60%;
     padding: 10px;
-    margin: 20px 0;
+    margin: 20px 10px;
     border: 1px solid black;
     border-radius: 10px;   
+}
+
+.entradasImg{
+    display: block;
+    margin: 0px 150px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .botonIniciar{
@@ -39,8 +45,8 @@
     background-color: #0d1214;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
-    margin: 10px 80px;
+    padding: 15px 40px;
+    margin: 40px 80px 0px 80px;
     cursor: pointer;
 }
 
@@ -50,10 +56,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#imagenGoogle{
-    object-fit: contain;
-    width: 100%;
-    height: 30px;
 }

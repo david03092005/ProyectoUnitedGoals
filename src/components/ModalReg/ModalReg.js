@@ -62,7 +62,7 @@ function Modal(){
                         />
                         {error ? <p>problema con la informacion ingresada</p> : null}
                         <button className={styles.botonIniciar} onClick={iniciarS}>
-                            Iniciar Sesión
+                            Registrarse
                         </button>
                         <button className={styles.botonIniciar} onClick={iniciarSG}>
                             <img src="ContinuarGoogle.png" id={styles.imagenGoogle} alt='Google'/>
