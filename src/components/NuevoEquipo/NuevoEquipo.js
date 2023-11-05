@@ -1,60 +1,47 @@
-import styles from './NuevoEquipo.module.css'
+import styles from './NuevoEquipo.module.css';
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { sumarEquipo } from '../../store/equiposInfoSlice';
 import { cambiarModalN } from '../../store/modalSlice';
 import { getDatabase, ref, set } from 'firebase/database';
 
 
 function NuevoEquipo(){
     const dispatch = useDispatch();
+    const { numEquipos } = useSelector((estado) => estado.equiposInfo);
+
     const dataBase = getDatabase();
     const [error, setError] = useState(false);
     const [agregado, setAgregado] = useState(false);
-
-    // const agregarNuevoEquipo = () => {
-    //     const nombre = document.getElementById("NombreEquipo").value;
-    //     const descripcion = document.getElementById("Descripcion").value;
-    //     const eslogan = document.getElementById("Eslogan").value;
-    //     const escudo = document.getElementById("Escudo").value;
-    //     const img = document.getElementById("ImagenPrincipal").value;
-
-    //     set(ref(dataBase, `Equipos/${nombre}`), {
-    //         name: nombre,   
-    //         descripcion: descripcion,
-    //         eslogan: eslogan,
-    //         escudo: escudo,
-    //         img: img
-    //     }).then(
-    //         setAgregado(true)
-    //     ).catch(
-    //         setError(true)
-    //     )
-    // }
 
     const agregarNuevoEquipo = () => {
         const nombre = document.getElementById("NombreEquipo").value;
         const descripcion = document.getElementById("Descripcion").value;
         const eslogan = document.getElementById("Eslogan").value;
         const escudo = document.getElementById("Escudo").value;
-        const img = document.getElementById("ImagenPrincipal").value;
+        const img = document.getElementById("ImagenPrincipal").value;   
     
-        // Verificar que tanto la imagen como el escudo no estén vacíos
+        console.log(img, escudo);
         if (img && escudo && nombre) {
-            set(ref(dataBase, `Equipos/${nombre}`), {
+            console.log(numEquipos)
+            set(ref(dataBase, `Equipos/${numEquipos}`), {
                 name: nombre,
                 descripcion: descripcion,
                 eslogan: eslogan,
                 escudo: escudo,
                 img: img
             }).then(() => {
+                dispatch(sumarEquipo());
                 setAgregado(true);
             }).catch(() => {
                 setError(true);
+            }).finally(() => {
+                console.log(numEquipos);
             });
         } else {
             setError(true);
         }
-    }
+    };
     
     return(
         <div className={styles.contenedorModal}>
@@ -110,7 +97,7 @@ function NuevoEquipo(){
                 }
             </div>
         </div>
-    )
+    );
 }
 
 export default NuevoEquipo;

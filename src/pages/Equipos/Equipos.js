@@ -4,6 +4,7 @@ import { cambiarModalN } from "../../store/modalSlice";
 import { useDispatch } from "react-redux";
 import { getDatabase, ref, get } from "firebase/database";
 import { useState, useEffect } from "react";
+import { cargarNumEquipos } from "../../store/equiposInfoSlice";
 
 
 
@@ -64,8 +65,8 @@ function Equipos() {
         const starCountRef = ref(dataBase, 'Equipos/');
         get(starCountRef).then((snapshot) => {
             const data = snapshot.val();
-            console.log(data);
             setEquipos(data);
+            dispatch(cargarNumEquipos(data.length));
         }).catch((error) => {
             console.error(error);
         });
