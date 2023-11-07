@@ -16,7 +16,7 @@ function Equipo() {
                             {equipoInfo.eslogan}
                         </p>
                         <Link to = '/Jugador'>
-                            <img src={equipoInfo.img} className = {styles.ImagenJugadores} alt="Imagen del creador"/>
+                            <img src={equipoInfo.img} className = {styles.ImagenJugadores} alt={equipoInfo.name}/>
                         </Link>
                     </div>
                     <div className={styles.ContenedorMayorInfo}>
@@ -26,7 +26,7 @@ function Equipo() {
                                 {equipoInfo.descripcion}
                             </p>
                         </div>
-                        <img src={equipoInfo.imgRepresentativa} className = {styles.ImagenJugadoresInfo} alt="Imagen del creador"/>
+                        <img src={equipoInfo.imgRepresentativa} className = {styles.ImagenJugadoresInfo} alt={equipoInfo.name}/>
                     </div>
                 </>
             }

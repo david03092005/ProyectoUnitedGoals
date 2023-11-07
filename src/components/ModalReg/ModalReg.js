@@ -21,7 +21,7 @@ function Modal(){
         })
     }
 
-    const iniciarS = () => {
+    const registrarseS = () => {
         const correo = document.getElementById("CorreoElectronico").value;
         const contraseña = document.getElementById("Contraseña").value;
         console.log(correo, contraseña);
@@ -30,7 +30,6 @@ function Modal(){
         }).catch(() => {
             setError(true);
         })
-
     }
 
     return(
@@ -61,11 +60,11 @@ function Modal(){
                             placeholder="Contraseña"
                         />
                         {error ? <p>problema con la informacion ingresada</p> : null}
-                        <button className={styles.botonIniciar} onClick={iniciarS}>
+                        <button className={styles.botonIniciar} onClick={registrarseS}>
                             Registrarse
                         </button>
                         <button className={styles.botonIniciar} onClick={iniciarSG}>
-                            <img src="ContinuarGoogle.png" id={styles.imagenGoogle} alt='Google'/>
+                            <img src="ContinuarGoogle.png" id={styles.imagenGoogle} alt="Google"/>
                         </button>
                     </div>
                 :

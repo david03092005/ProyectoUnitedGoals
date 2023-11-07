@@ -31,12 +31,12 @@
     padding: 10px;
     margin: 20px 0;
     border: 1px solid black;
-    border-radius: 10px;   
+    border-radius: 10px;
 }
 
 .botonIniciar{
-    background-color: #0d1214; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
+    background-color: #0d1214;
+    color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;

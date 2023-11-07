@@ -19,7 +19,7 @@ function Container({equipo}){
     return(
         <Link to = "/Equipo" onClick={() => (dispatch(cargarEquipos(equipo)))}>
             <div className = {styles.container}>
-            <img src={equipo.escudo} className = {styles.ImagenEquipo} alt="Imagen del creador"/>
+            <img src={equipo.escudo} className = {styles.ImagenEquipo} alt={equipo.name}/>
                 <h2 className = {styles.titulo}> {equipo.name} </h2>
                 <p className={styles.ParrafoC}>
                     lorem, ipsum.
