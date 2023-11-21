@@ -1,0 +1,13 @@
+.contenedorEvento{
+    width: 50%;
+    background-color: rgb(151, 21, 21);
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.linksE{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+}

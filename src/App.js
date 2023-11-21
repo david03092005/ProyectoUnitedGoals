@@ -16,6 +16,7 @@ import Equipo from './pages/Equipo/Equipo';
 import Jugador from './pages/Jugador/Jugador';
 import Footer from './components/Footer/Footer';
 import Error404 from './pages/Error404/Error404';
+import EventoInfo from './pages/EventoInfo/EventoInfo';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route exact path = '/Eventos' element = {<Eventos/>} />
           <Route exact path = '/Equipo' element = {<Equipo/>} />
           <Route exact path = '/Jugador' element = {<Jugador />} />
+          <Route exact path = '/EventoInfo' element = {<EventoInfo />} />
           <Route exact path = '*' element = {<Error404/>} />
         </Routes>
         <Footer/>

@@ -3,6 +3,7 @@ import navigatorBarSlice from "./navigatorBarSlice";
 import equiposInfoSlice from "./equiposInfoSlice";
 import modalSlice from "./modalSlice";
 import inicioSesionSlice from "./InicioSesionSlice";
+import eventosInfoSlice from "./eventosInfoSlice";
 
 
 export default configureStore({
@@ -10,6 +11,7 @@ export default configureStore({
         navigatorBar: navigatorBarSlice,
         equiposInfo: equiposInfoSlice,
         verModal: modalSlice,
-        inicioSesion: inicioSesionSlice 
+        inicioSesion: inicioSesionSlice,
+        eventosInfo: eventosInfoSlice
     }
 })

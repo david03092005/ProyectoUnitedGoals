@@ -1,0 +1,33 @@
+{"Eventos": {
+    "0": {
+        "lugar": "Estadio Santiago Bernabéu Madrid",
+        "motivo": "Champions league (Grupo C)",
+        "equipos": "Real madrid vs Napoli",
+        "hora": "15:00"
+    },
+    "1": {
+        "lugar": "Estadio de la Rosaleda Sevilla",
+        "motivo": "Copa del Rey",
+        "equipos": "Sevilla vs Granada",
+        "hora": "20:30"
+    },
+    "2": {
+        "lugar": "Estadio Ramón Sánchez Pizjuán Tenerife",
+        "motivo": "Europa League",
+        "equipos": "Tenerife vs Valencia",
+        "hora": "20:45"
+    },
+    "3": {
+        "lugar": "Estadio del ArsenalLondres",
+        "motivo": "Champions league (Grupo B)",
+        "equipos": "Arsenal vs Chelsea",
+        "hora": "15:00"
+    },
+    "4": {
+        "lugar": "Parque de los PríncipesParís",
+        "motivo":"Champions league (Grupo D)",
+        "equipos": "Barcelona vs Paris Saint-germain",
+        "hora": "16:00"
+    }
+}
+}
